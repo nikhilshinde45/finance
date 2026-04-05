@@ -11,9 +11,8 @@ backend/
 ├── middleware/          # Express middlewares (auth, validation, errors)
 ├── models/              # Mongoose database models
 ├── routes/              # API route definitions
-├── scripts/             # Script to create the first admin user
-├── utils/               # Utilities (ApiError)
-├── validations/         # Zod schemas definitions
+├── scripts/             # Seeding and testing scripts
+├── api_docs.md         # API Documentation
 ├── server.js            # Main application entry point
 └── package.json         # Dependencies and Scripts
 ```
@@ -29,14 +28,22 @@ npm install
 ### 2. Check the Environment Variables
 We have defined `.env` in the root of the `backend/` directory.
 
-### 3. Seed an Admin User
-To populate the database with a first admin account for testing:
+### 3. Seed Sample Data
+To populate the database with an admin, analyst, viewer, and 50+ records:
+```bash
+npm run seed:data
+```
+
+To create an admin account manually:
 ```bash
 npm run seed:admin
 ```
 Follow the prompts to configure an email and password.
 
-### 4. Run the Server
+### 4. API Documentation
+Full details of all available endpoints can be found in [api_docs.md](./api_docs.md).
+
+### 5. Run the Server
 **Development Mode** (auto-restart with Nodemon):
 ```bash
 npm run dev
