@@ -1,0 +1,11 @@
+TypeError: next is not a function
+    at model.<anonymous> (C:\Users\nikhi\Desktop\zvn\backend\models\user.model.js:46:3)
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at process.processImmediate (node:internal/timers:453:9)
+    at async Kareem.execPre (C:\Users\nikhi\Desktop\zvn\backend\node_modules\kareem\index.js:70:24)
+    at async model.$__save (C:\Users\nikhi\Desktop\zvn\backend\node_modules\mongoose\lib\model.js:397:5)
+    at async model.save (C:\Users\nikhi\Desktop\zvn\backend\node_modules\mongoose\lib\model.js:667:5)
+    at async C:\Users\nikhi\Desktop\zvn\backend\node_modules\mongoose\lib\model.js:2823:9
+    at async Promise.all (index 1)
+    at async Function.create (C:\Users\nikhi\Desktop\zvn\backend\node_modules\mongoose\lib\model.js:2808:11)
+    at async seedData (C:\Users\nikhi\Desktop\zvn\backend\scripts\seed-data.js:62:24)
